@@ -1,23 +1,28 @@
 import React from "react";
-import logo from "../../components/assets/logo.png";
-import { Link } from "react-router-dom"
+import logo from "../../components/assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Search = () => {
+  window.addEventListener("scroll", function () {
+    const search = document.querySelector(".search");
+    search.classList.toggle("active", window.scrollY > 100);
+  });
   return (
     <>
       <section className="search">
         <div className="container c_flex">
-          <div className="logo width">
+          <div className="logo width ">
             <img src={logo} alt="" />
           </div>
+
           <div className="search-box f_flex">
             <i className="fa fa-search"></i>
-            <input type="text" placeholder="Search an hit enter ..." />
-            <span>Todas las categorias</span>
+            <input type="text" placeholder="Search and hit enter..." />
+            <span>All Category</span>
           </div>
 
           <div className="icon f_flex width">
-            <i className="fa fa-user icon_circle"></i>
+            <i className="fa fa-user icon-circle"></i>
             <div className="cart">
               <Link to="/cart">
                 <i className="fa fa-shopping-bag icon-circle"></i>

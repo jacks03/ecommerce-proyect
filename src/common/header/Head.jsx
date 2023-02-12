@@ -1,24 +1,24 @@
 import React from 'react'
+import { Pe } from "react-flags-select";
 
 const Head = () => {
   return (
     <>
-    <section className='head'>
-        <div className="container d_flex">
-            <div className="left row">
-                <i className='fa fa-phone'></i>
-                <label> 123 321 123</label>
-                <i className='fa fa-envelope'></i>
-                <label> ejemplo@gmail.com</label>
-            </div>
-            <div className="right row RText">
-            <label> Theme FAQ' s</label>
-            <label> ¿Necesita ayuda?</label>
-            <span>Peru</span>
-            <label htmlFor="">EN</label>
-            <span>Chile</span>
-            <label htmlFor="">USD</label>
-            
+          <section className='head'>
+        <div className='container d_flex'>
+          <div className='left row'>
+            <i className='fa fa-phone'></i>
+            <label> +88012 3456 7894</label>
+            <i className='fa fa-envelope'></i>
+            <label> support@ui-lib.com</label>
+          </div>
+          <div className='right row RText'>
+            <label>Theme FAQ"s</label>
+            <label>Need Help?</label>
+            <span><Pe/></span>
+            <label>PE</label>
+            <span><Pe/></span>
+            <label>PEN</label>
             </div>
         </div>
     </section>

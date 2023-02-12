@@ -4,8 +4,9 @@ import{
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom"
+import Pages from './pages/Pages';
+
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
         <Header/>
         <Switch>
           <Route path='/' exact>
+          <Pages/>
           </Route>
           <Route path='/cart'>
+            
           </Route>
         </Switch>
       </Router>
