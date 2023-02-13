@@ -1,5 +1,5 @@
-import React from "react";
-import Sdata from "./Sdata";
+import React from "react"
+import Sdata from "./Sdata"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -17,7 +17,7 @@ const SlideCard = () => {
   }
   return (
     <>
-           <Slider {...settings}>
+      <Slider {...settings}>
         {Sdata.map((value, index) => {
           return (
             <>
@@ -36,7 +36,7 @@ const SlideCard = () => {
         })}
       </Slider>
     </>
-  );
-};
+  )
+}
 
-export default SlideCard;
+export default SlideCard
